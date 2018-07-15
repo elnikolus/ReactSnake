@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Field from './Field';
 import ShowDateTime from './ShowDataTime';
 
-class App extends Component {
+class SnakeProcessor extends Component {
 
     constructor(props) {
         super(props);
@@ -205,19 +205,19 @@ class App extends Component {
     render() {
         return (
             <div>
-                <h1>Snake!</h1>
-                <p>Score is {this.state.snakeLength - 3} parrots</p>
                 <ShowDateTime/>
                 <Field
+                    score = {this.state.snakeLength - 3}
                     board={this.state.board}
                     size={{
                         boardWidth: this.state.boardWidth,
                         boardHeight: this.state.boardHeight
-                    }}/>
+                    }}
+                />
             </div>
         );
     };
 };
 
 
-export default App;
+export default SnakeProcessor;

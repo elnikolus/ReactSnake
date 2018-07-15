@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 class Cell extends Component {
 
-    styleOfCell =() => {
+    styleOfCell = () => {
         var style = {
             border: '1px solid grey',
             borderRadius: '2px',
