@@ -207,7 +207,7 @@ class SnakeProcessor extends Component {
             <div>
                 <ShowDateTime/>
                 <Field
-                    score = {this.state.snakeLength - 3}
+                    score={this.state.snakeLength - 3}
                     board={this.state.board}
                     size={{
                         boardWidth: this.state.boardWidth,

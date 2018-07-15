@@ -21,9 +21,13 @@ class ShowDateTime extends Component {
     }
 
     render() {
+        let minutes = Math.floor(this.state.seconds / 6),
+            seconds = this.state.seconds % 60,
+            minuteTime = (minutes === 0) ? '' : (minutes === 1) ? `${minutes} minute ` : `${minutes} minutes `,
+            secondsTime = (seconds === 1) ? `${seconds} second` : `${seconds} seconds`;
         return (
             <div>
-                Seconds: {this.state.seconds}
+                {minuteTime + secondsTime}
             </div>
         );
     }
