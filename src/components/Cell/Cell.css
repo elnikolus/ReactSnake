@@ -1,0 +1,16 @@
+#board .empty {
+    background-color: black;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+#board .snake {
+    background-color: green;
+}
+
+#board .apple {
+    background-color: red;
+}
